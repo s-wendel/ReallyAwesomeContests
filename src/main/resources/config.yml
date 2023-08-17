@@ -1,0 +1,32 @@
+options:
+  messages: english.yml
+  #database:
+
+contests:
+  Mining:
+    description:
+      - "&7Mine blocks!!!!!"
+    length: 20 Minutes
+    # After the contest starts, the contest will begin a new one after this time interval
+    # 20 Minutes would start a new one immediately
+    starts_every: 1 Hour
+    # What causes the contest to update ? Options: BLOCK_BREAK, BLOCK_PLACE, PLAYER_MOVE, PLAYER_FISH,
+    action: BLOCK_BREAK
+    # Applicable materials towards the action
+    action_materials:
+      - STONE
+      - COAL_ORE
+      - IRON_ORE
+      - GOLD_ORE
+      - REDSTONE_ORE
+      - COPPER_ORE
+      - LAPIS_ORE
+      - DIAMOND_ORE
+      - EMERALD_ORE
+
+    boss_bar:
+      enabled: true
+      text: "&6&lMining Contest   &fPosition: %position%   &f%time_left%"
+      # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/boss/BarColor.html
+      # Options: BLUE, GREEN, PINK, PURPLE, RED, WHITE, YELLOW
+      color: YELLOW

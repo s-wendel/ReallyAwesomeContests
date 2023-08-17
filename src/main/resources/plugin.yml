@@ -1,0 +1,4 @@
+name: ReallyAwesomeContests
+version: '${project.version}'
+main: shwendel.reallyawesomecontests.ReallyAwesomeContests
+api-version: 1.20
